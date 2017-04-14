@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>博客后台管理系统</title>
+        <!-- Bootstrap Styles-->
+        <link href="__PUBLIC__/assets/css/bootstrap.css" rel="stylesheet" />
+        <!-- FontAwesome Styles-->
+        <link href="__PUBLIC__/assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- Morris Chart Styles-->
+        <link href="__PUBLIC__/assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+        <!-- Custom Styles-->
+        <link href="__PUBLIC__/assets/css/custom-styles.css" rel="stylesheet" />
+        <!-- Google Fonts-->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+
+
+        <script type="text/javascript"src="__PUBLIC__/ueditor/ueditor.config.js"></script>  
+        <script type="text/javascript"src="__PUBLIC__/ueditor/ueditor.all.js"></script> 
+
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            {include file='indextop/index' /}
+
+            <!--/. NAV TOP  -->
+            {include file='indexside/index' /}
+            <!-- /. NAV SIDE  -->
+            <!-- /. NAV SIDE  -->
+            <div id="page-wrapper">
+                <div id="page-inner">
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <ol class="breadcrumb">
+                                <li><a href="#">首页</a></li>
+
+                                <li class="active">文章编辑</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+
+                            <form role="form" name="myform" method="POST" action="" enctype="multipart/form-data">
+                                <div class="form-group has-success">
+                                    <label class="control-label" for="inputSuccess">文章标题</label>
+                                    <input type="text" name="title" class="form-control"  style="width: 500px;">
+                                </div>
+                                <div class="form-group">
+                                    <label style="color:red">分类选择</label><br>
+
+                                        <label>
+                                            <input  name="identity" type="radio" value="Technology">技术
+                                        </label>
+
+
+                                        <label>
+                                            <input   name="identity" type="radio" value="Sec">安全
+                                        </label>
+
+
+                                        <label>
+                                            <input  name="identity" type="radio" value="Life">生活
+                                        </label>
+
+                                </div>
+
+                                <div>
+                                    <script id="editor" type="text/plain"></script>
+                                    <textarea id="container" name="container"
+
+                                              style="width: 800px; height: 300px; ">
+
+                                    </textarea>
+                                </div>
+
+                                <script type="text/javascript">
+
+                                    var ue = UE.getEditor("container");
+
+                                </script>
+
+
+                                <input class="btn btn-primary btn" type="submit" value="确认">
+                                    <input class="btn btn-primary btn" onclick="history.go(-1)" type="button" value="重置">
+
+
+
+
+
+                                        </form>
+                                        </div>
+                                        </div>
+
+
+
+                                        <footer><p><i class="fa  fa-tag"></i>网站管理系统</p></footer>
+                                        </div>
+                                        <!-- /. PAGE INNER  -->
+                                        </div>
+                                        <!-- /. PAGE WRAPPER  -->
+                                        </div>
+                                        <!-- /. WRAPPER  -->
+                                        <!-- JS Scripts-->
+                                        <!-- jQuery Js -->
+                                        <script src="__PUBLIC__/assets/js/jquery-1.10.2.js"></script>
+                                        <!-- Bootstrap Js -->
+                                        <script src="__PUBLIC__/assets/js/bootstrap.min.js"></script>
+
+                                        <!-- Metis Menu Js -->
+                                        <script src="__PUBLIC__/assets/js/jquery.metisMenu.js"></script>
+                                        <!-- Morris Chart Js -->
+                                        <script src="__PUBLIC__/assets/js/morris/raphael-2.1.0.min.js"></script>
+                                        <script src="__PUBLIC__/assets/js/morris/morris.js"></script>
+
+
+                                        <script src="__PUBLIC__/assets/js/easypiechart.js"></script>
+                                        <script src="__PUBLIC__/assets/js/easypiechart-data.js"></script>
+
+
+                                        <!-- Custom Js -->
+                                        <script src="__PUBLIC__/assets/js/custom-scripts.js"></script>
+
+
+                                        </body>
+
+                                        </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+      <title>Zmore's 黑板报 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- 引入 Bootstrap -->
+      
+      <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+       
+      <script src="__PUBLIC__/js/jquery.min.js"></script>
+	<script src="__PUBLIC__/js/bootstrap.min.js"></script>
+     
+     
+      <style>
+          .jumbotron{background-image: url(__PUBLIC__/img/background.jpg);background-size:100% 100%;}
+          
+      </style>
+   </head>
+    <body>
+        <div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			{include file='PublicTop/index' /}
+
+                    <div class="jumbotron" >
+                        <h1 style=" color: white">
+					Zmore's黑板报
+				</h1>
+				<p style=" color: white">
+                                   &nbsp; &nbsp; &nbsp; &nbsp; //在网络安全上跌跌撞撞的小菜鸟
+                                </p>
+                                <p  style="text-align:right">
+                                    <button type="button" class="btn btn-default btn-lg" style=" background-color: #F8F8F8" >About me</button>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix">
+            <div class="col-md-4 column">
+			<h2>
+				技术
+			</h2>
+			<p>
+				简介
+                        </p>
+			<p>
+				 <a class="btn" href="{:Url('index/technology/index')}">View details »</a>
+			</p>
+		</div>
+		<div class="col-md-4 column">
+			<h2>
+				安全
+			</h2>
+			<p>
+				简介
+                        </p>
+			<p>
+				 <a class="btn" href="{:Url('index/sec/index')}">View details »</a>
+			</p>
+		</div>
+		<div class="col-md-4 column">
+			<h2>
+				随便写写
+			</h2>
+			<p>
+				简介
+                        </p>
+			<p>
+				 <a class="btn" href="{:Url('index/life/index')}">View details »</a>
+			</p>
+		</div>
+	</div>
+</div>
+    </body>
+</html>
